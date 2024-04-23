@@ -8,20 +8,22 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
+&mt { flavor = "tap-preferred"; };
+
 / {
     behaviors {
         tap_layer_2: tap_layer_2 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_LAYER_2";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&tog 2>;
+            bindings = <&sl 2>, <&tog 2>;
         };
 
         tap_layer_1: tap_layer_1 {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_LAYER_1";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&tog 1>;
+            bindings = <&sl 1>, <&tog 1>;
         };
 
         tap_dance_tab: tap_dance_tab {
@@ -29,6 +31,13 @@
             label = "TAP_DANCE_TAB";
             #binding-cells = <0>;
             bindings = <&kp TAB>, <&kp RA(TAB)>;
+        };
+
+        td_escape: td_escape {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_ESCAPE";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE>, <&kp ESCAPE>;
         };
     };
 
@@ -44,11 +53,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&kp GRAVE       &kp N1            &kp N2              &kp N3    &kp N4    &kp N5                                &kp N6        &kp N7    &kp N8     &kp N9               &kp N0                     &kp DELETE
+&td_escape      &kp N1            &kp N2              &kp N3    &kp N4    &kp N5                                &kp N6        &kp N7    &kp N8     &kp N9               &kp N0                     &kp DELETE
 &tap_dance_tab  &kp Q             &kp W               &kp E     &kp R     &kp T                                 &kp Y         &kp U     &kp I      &kp O                &kp P                      &kp BACKSLASH
 &kp CAPSLOCK    &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &kp D     &kp F     &kp G                                 &kp H         &kp J     &kp K      &mt RIGHT_CONTROL L  &mt RIGHT_SHIFT SEMICOLON  &kp SQT
 &mo 3           &kp Z             &kp X               &kp C     &kp V     &kp B         &kp LBKT     &kp RBKT   &kp N         &kp M     &kp COMMA  &kp DOT              &kp FSLH                   &kp EQUAL
-                                                      &kp LALT  &kp LGUI  &tap_layer_1  &kp ENTER    &kp SPACE  &tap_layer_2  &kp BSPC  &kp RGUI
+                                                      &kp LALT  &kp LGUI  &tap_layer_1  &kp ENTER    &kp SPACE  &tap_layer_2  &kp BSPC  &sl 0
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
