@@ -71,7 +71,7 @@
 &kp BACKSPACE  &mkp LCLK         &mkp RCLK            &kp TAB                                     &kp K_MUTE  &mo 2  &kp ENTER  &kp DELETE               &kp ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         lower_layer {
@@ -97,7 +97,7 @@
 &trans  &trans  &trans  &trans          &kp HOME              &trans  &trans                 &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         mouse_layer {
