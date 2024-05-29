@@ -77,11 +77,11 @@
         lower_layer {
             display-name = "LOWER";
             bindings = <
-&ext_power EP_ON   &kp F12  &kp F11  &kp F10  &kp F9  &rgb_ug RGB_EFF          &trans  &kp N7        &kp N8        &kp N9        &trans  &trans
-&ext_power EP_OFF  &kp F8   &kp F7   &kp F6   &kp F5  &rgb_ug RGB_ON           &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
-&bootloader        &kp F4   &kp F3   &kp F2   &kp F1  &rgb_ug RGB_OFF          &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &bootloader
-                            &trans   &trans   &trans  &trans                                                       &trans        &trans
-&trans             &trans   &trans   &trans           &rgb_ug RGB_TOG  &trans  &trans  &trans        &trans
+&ext_power EP_ON   &kp F12  &kp F11         &kp F10  &kp F9  &rgb_ug RGB_EFF          &trans  &kp N7        &kp N8        &kp N9        &trans  &trans
+&ext_power EP_OFF  &kp F8   &kp F7          &kp F6   &kp F5  &rgb_ug RGB_ON           &trans  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans  &trans
+&bootloader        &kp F4   &kp F3          &kp F2   &kp F1  &rgb_ug RGB_OFF          &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &bootloader
+                            &kp LEFT_SHIFT  &trans   &trans  &trans                                                       &trans        &trans
+&trans             &trans   &trans          &trans           &rgb_ug RGB_TOG  &trans  &trans  &trans        &trans
             >;
 
             sensor-bindings = <&rgb_encoder_bright>;
