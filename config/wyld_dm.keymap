@@ -92,11 +92,11 @@
         raise_layer {
             display-name = "RAISE";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp LBKT                      &kp RBKT               &kp HOME  &kp PAGE_UP    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                        &kp LEFT               &kp DOWN  &kp UP         &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS          &kp RIGHT_PARENTHESIS  &kp END   &kp PAGE_DOWN  &trans     &trans  &trans
-                &trans  &trans  &trans  &trans                                                                        &trans     &trans
-&trans  &trans  &trans  &trans          &kp HOME              &trans  &trans                 &trans    &trans
+&kp GRAVE  &trans  &trans  &trans  &trans  &kp LBKT                      &kp RBKT               &kp HOME  &kp PAGE_UP    &trans     &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &trans                        &kp LEFT               &kp DOWN  &kp UP         &kp RIGHT  &trans  &trans
+&trans     &trans  &trans  &trans  &trans  &kp LEFT_PARENTHESIS          &kp RIGHT_PARENTHESIS  &kp END   &kp PAGE_DOWN  &trans     &trans  &trans
+                   &trans  &trans  &trans  &trans                                                                        &trans     &trans
+&trans     &trans  &trans  &trans          &kp HOME              &trans  &trans                 &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
