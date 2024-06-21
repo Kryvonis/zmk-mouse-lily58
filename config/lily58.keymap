@@ -115,8 +115,8 @@
 
             bindings = <
 &trans  &trans  &trans          &trans          &trans           &trans                    &trans    &trans    &trans         &trans     &trans  &trans
-&trans  &trans  &trans          &mmv MOUSE_UP   &trans           &trans                    &trans    &kp HOME  &kp PAGE_UP    &trans     &trans  &trans
-&trans  &trans  &mmv MOUSE_LEFT &mmv MOUSE_DOWN &mmv MOUSE_RIGHT &trans                    &kp LEFT  &kp DOWN  &kp UP_ARROW   &kp RIGHT  &trans  &trans
+&trans  &trans  &trans          &mmv MOVE_UP    &trans           &trans                    &trans    &kp HOME  &kp PAGE_UP    &trans     &trans  &trans
+&trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans                    &kp LEFT  &kp DOWN  &kp UP_ARROW   &kp RIGHT  &trans  &trans
 &trans  &trans  &trans          &trans          &trans           &trans  &trans    &trans  &trans    &kp END   &kp PAGE_DOWN  &trans     &trans  &trans
                         &trans  &trans  &trans  &trans    &trans  &trans    &trans    &tog 0
             >;
