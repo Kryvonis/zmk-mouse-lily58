@@ -66,11 +66,11 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB        &kp Q             &kp W                &kp E                &kp R                  &kp T                    &kp Y      &kp U                    &kp I                  &kp O                  &kp P                      &kp BACKSLASH
-&kp CAPS       &hm_left LCTRL A  &hm_left LEFT_GUI S  &hm_left LEFT_ALT D  &hm_left LEFT_SHIFT F  &kp G                    &kp H      &hm_right RIGHT_SHIFT J  &hm_right RIGHT_ALT K  &hm_right RIGHT_GUI L  &hm_right RCTRL SEMICOLON  &kp SQT
-&mo 4          &kp Z             &kp X                &kp C                &kp V                  &kp B                    &kp N      &kp M                    &kp COMMA              &kp DOT                &kp FSLH                   &kp EQUAL
-                                 &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &lt 1 ESCAPE           &kp SPACE                                                                           &kp MINUS              &kp GRAVE
-&kp BACKSPACE  &mkp LCLK         &mkp RCLK            &kp TAB                                     &kp K_MUTE  &lt 2 ENTER  &kp ENTER  &kp DELETE               &kp ESCAPE
+&kp TAB        &kp Q             &kp W                &kp E                &kp R                  &kp T                    &kp Y  &kp U                    &kp I                  &kp O                  &kp P                      &kp BACKSLASH
+&kp CAPS       &hm_left LCTRL A  &hm_left LEFT_GUI S  &hm_left LEFT_ALT D  &hm_left LEFT_SHIFT F  &kp G                    &kp H  &hm_right RIGHT_SHIFT J  &hm_right RIGHT_ALT K  &hm_right RIGHT_GUI L  &hm_right RCTRL SEMICOLON  &kp SQT
+&mo 4          &kp Z             &kp X                &kp C                &kp V                  &kp B                    &kp N  &kp M                    &kp COMMA              &kp DOT                &kp FSLH                   &kp EQUAL
+                                 &kp LEFT_BRACKET     &kp RIGHT_BRACKET    &lt 1 ESCAPE           &kp ENTER                                                                       &kp MINUS              &kp GRAVE
+&kp BACKSPACE  &mkp LCLK         &mkp RCLK            &kp TAB                                     &kp K_MUTE  &lt 2 SPACE  &none  &kp DELETE               &none
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
@@ -117,11 +117,11 @@
 
         bluetooth {
             bindings = <
-&bt BT_CLR  &trans  &trans  &trans  &trans  &trans          &trans  &trans        &trans        &trans        &trans        &trans
-&trans      &trans  &trans  &trans  &trans  &trans          &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans      &trans  &trans  &trans  &trans  &trans          &trans  &trans        &trans        &trans        &trans        &trans
-                    &trans  &trans  &trans  &trans                                              &trans        &trans
-&trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans        &trans        &trans        &trans        &trans
+                &trans  &trans  &trans  &trans                                              &bt BT_CLR    &trans
+&trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans        &trans
             >;
         };
     };
