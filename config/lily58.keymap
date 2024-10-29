@@ -31,13 +31,6 @@
             bindings = <&sl 1>, <&tog 1>;
         };
 
-        tap_dance_tab: tap_dance_tab {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_TAB";
-            #binding-cells = <0>;
-            bindings = <&kp TAB>, <&kp RA(TAB)>;
-        };
-
         hm: hm {
             compatible = "zmk,behavior-hold-tap";
             label = "Home row mods for left";
