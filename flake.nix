@@ -35,6 +35,13 @@
       update = zmk-nix.packages.${system}.update;
     });
 
+    apps = forAllSystems (system: {
+      default = {
+        type = "app";
+        program = "${nixpkgs.lib.getExe self.packages.${system}.flash}";
+      };
+    });
+
     devShells = forAllSystems (system: {
       default = zmk-nix.devShells.${system}.default;
     });
