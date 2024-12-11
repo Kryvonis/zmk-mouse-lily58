@@ -9,7 +9,7 @@ manifest:
   projects:
     - name: zmk
       remote: pete
-      revision: feat/pointers-with-input-processors
+      revision: sensors/cirque-input-driver
       import: app/west.yml
   self:
     path: config
